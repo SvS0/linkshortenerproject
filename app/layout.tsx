@@ -1,10 +1,17 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import { ClerkProvider, SignInButton, SignUpButton, Show, UserButton } from "@clerk/nextjs";
+import {
+  ClerkProvider,
+  SignInButton,
+  SignUpButton,
+  Show,
+  UserButton,
+} from "@clerk/nextjs";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,15 +34,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", inter.variable)}>
+    <html lang="en" className={cn("dark", "font-sans", inter.variable)}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ClerkProvider>
-          <header>
+          <header className="flex items-center justify-end gap-4 p-4">
             <Show when="signed-out">
-              <SignInButton />
-              <SignUpButton />
+              <SignInButton>
+                <Button variant="outline">Sign In</Button>
+              </SignInButton>
+              <SignUpButton>
+                <Button>Sign Up</Button>
+              </SignUpButton>
             </Show>
             <Show when="signed-in">
               <UserButton />
