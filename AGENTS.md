@@ -34,12 +34,12 @@ All coding standards are organized in the `/docs` directory by topic:
 
 ### Core Standards
 
-- **[TypeScript Standards]()** — Type safety, path aliases, strict mode
-- **[Next.js Patterns]()** — App Router, Server/Client Components, data fetching
-- **[Database Patterns]()** — Drizzle ORM, schema design, queries
+- **[TypeScript Standards](docs/typescript-standards.md)** — Type safety, path aliases, strict mode
+- **[Next.js Patterns](docs/nextjs-patterns.md)** — App Router, Server/Client Components, data fetching
+- **[Database Patterns](docs/database-patterns.md)** — Drizzle ORM, schema design, queries
 - **[UI Components](docs/ui-components.md)** — shadcn/ui components, component patterns, styling standards
 - **[Authentication](docs/authentication.md)** — Clerk integration and user management, route protection, and auth patterns
-- **[Project Structure]()** — File organization and naming conventions
+- **[Project Structure](docs/project-structure.md)** — File organization and naming conventions
 
 ## Quick Reference
 
