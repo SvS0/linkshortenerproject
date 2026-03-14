@@ -1,3 +1,7 @@
+---
+description: This file defines the authentication standards for the project, ensuring consistent use of Clerk for all auth-related functionality.
+---
+
 # Authentication Standards
 
 ## Overview

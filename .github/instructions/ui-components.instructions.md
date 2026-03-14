@@ -1,3 +1,7 @@
+---
+description: This file defines the UI component standards for the project, ensuring consistent use of shadcn/ui components.
+---
+
 # UI Component Standards
 
 ## Overview

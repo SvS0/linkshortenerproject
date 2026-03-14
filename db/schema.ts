@@ -17,6 +17,10 @@ export const links = pgTable(
     shortCode: varchar("short_code", { length: 10 }).notNull(),
     clicks: integer("clicks").notNull().default(0),
     createdAt: timestamp("created_at").notNull().defaultNow(),
+    updatedAt: timestamp("updated_at")
+      .notNull()
+      .defaultNow()
+      .$onUpdate(() => new Date()),
   },
   (table) => [
     unique("unique_short_code").on(table.shortCode),

@@ -8,6 +8,13 @@
       "when": 1773468717754,
       "tag": "0000_lean_vanisher",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1773507130382,
+      "tag": "0001_lucky_grandmaster",
+      "breakpoints": true
     }
   ]
 }
