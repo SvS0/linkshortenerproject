@@ -51,6 +51,7 @@ All coding standards are organized in the `/docs` directory by topic:
 4. **Server Components by default** — Only add `"use client"` when necessary
 5. **Colocate related code** — Keep components, types, and logic together
 6. **Follow Next.js App Router conventions** — Use proper file naming and routing
+7. **NEVER use middleware.ts** — This is deprecated in Next.js 16. Always use `proxy.ts` instead for middleware functionality
 
 ### When in Doubt
 

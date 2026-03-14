@@ -33,12 +33,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("dark", geistSans.variable, geistMono.variable)}>
+    <html
+      lang="en"
+      className={cn("dark", geistSans.variable, geistMono.variable)}
+    >
       <body className="antialiased">
         <ClerkProvider
           appearance={{
             theme: shadcn,
           }}
+          signInFallbackRedirectUrl="/dashboard"
+          signUpFallbackRedirectUrl="/dashboard"
         >
           <header className="flex items-center justify-end gap-4 p-4">
             <Show when="signed-out">

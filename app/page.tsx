@@ -40,13 +40,13 @@ export default async function Home() {
           all your URLs from one simple dashboard.
         </p>
         <div className="flex flex-wrap gap-4 justify-center mt-2">
-          <SignUpButton mode="modal">
+          <SignUpButton mode="modal" forceRedirectUrl="/dashboard">
             <Button size="lg" className="gap-2">
               <Zap className="size-4" />
               Get Started for Free
             </Button>
           </SignUpButton>
-          <SignInButton mode="modal">
+          <SignInButton mode="modal" forceRedirectUrl="/dashboard">
             <Button variant="outline" size="lg">
               Sign In
             </Button>
